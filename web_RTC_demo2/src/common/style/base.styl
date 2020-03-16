@@ -1,0 +1,98 @@
+$color_0=#000000
+$color_3=#333333
+$color_6=#666666
+$color_9=#999999
+$color_b=#bbbbbb
+$color_d=#dddddd
+$color_f2=#f2f2f2
+$color_f5=#F5F5F7
+$color_fa=#fafafa
+$color_fc=#fcfcfc
+$color_f=#ffffff
+$color_on=#F22C1B
+
+
+w_h(w=100%,h=auto)
+	width:w
+	height:h
+
+flex(justify=space-between,align=center)
+	display: flex
+	justify-content:justify
+	align-items:align
+				
+position(type=relative,t=auto,b=auto,l=auto,r=auto,zindex=0)
+	position:type
+	top:t
+	bottom:b
+	left:l
+	right:r
+	z-index: zindex
+
+*{
+	box-sizing:border-box
+	background-clip: padding-box
+	-webkit-appearance: none
+	-webkit-tap-highlight-color:transparent
+}
+
+body,ul,li,p,h1,h2,h3,h4,h5,input,button
+	margin:0
+	padding:0
+	border:0
+	
+input,button,textarea,img
+	border:none
+	outline:none
+		
+li
+	list-style:none
+	
+a
+	text-decoration : none
+
+
+.page-fade-enter-active{
+	transition: all .3s ease .3s
+}
+.page-fade-leave-active{
+	transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+}
+.page-fade-enter{
+	transform: translateX(100%)
+	opacity: 1
+}
+.page-fade-leave-to{
+	transform: translateX(-100%)
+	opacity: 0
+}
+
+	
+img.absolute
+	position(absolute,50%,auto,50%,auto)
+	w_h()
+	min-height: 100%
+	object-fit: cover
+	transform: translate(-50%,-50%)
+	
+.mint-loadmore-top,.mint-loadmore-bottom,.vue-jsonp-loading
+	font-size:0.4rem
+	color:#color_3
+	img
+		vertical-align:middle
+		background:none
+		
+.vue-jsonp-loading
+	text-align:center
+	padding:0.3rem
+	
+.mint-header
+	w_h(100%,1.4rem)
+	line-height:1.4rem
+	font-size:0.58rem
+	background:$color_f
+	color:$color_3
+
+	
+	
+	

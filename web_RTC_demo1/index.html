@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	  	<title>WebRTC</title> 
+	  	<link rel="stylesheet" href="index.css" />
+	</head> 
+	<body> 
+	  	<div id="login-page"> 
+		   	<p class="title">登录</p> 
+		   	<input type="text" id="username" autocomplete="off" placeholder="请输入用户名"/> 
+		   	<div class="btn-group">
+		   		<button id="login">登录</button>
+		   	</div> 	
+	  	</div>
+	  	<div id="call-page"> 
+		   	<p class="title">呼叫</p> 
+		   	<input type="text" id="their-username" placeholder="请输入对方用户名"/> 
+		   	<div class="btn-group">
+		   		<button id="call">呼叫</button>
+		   	</div> 
+	  	</div>
+	  	<div id="wait-page"> 
+	  		<audio id="wait" src="wait.mp3" loop></audio>
+		   	<p class="title">正在呼叫</p>
+		   	<div class="btn-group">
+		   		<button id="cancel">取消</button> 
+		   	</div> 
+	  	</div> 
+	  	<div id="link-page"> 
+		   	<p class="title">收到呼叫</p> 
+		   	<audio id="link" src="link.mp3" loop></audio>
+		   	<div class="btn-group">
+		   		<button id="agree">同意</button>
+		   		<button id="disagree">不同意</button>
+		   	</div> 	
+	  	</div> 
+	  	<div id="show-page"> 
+		   	<video id="yours" muted></video> 
+		   	<video id="theirs"></video> 
+		   	<div class="btn-group">
+		   		<button id="hang-up">挂断</button> 
+		   	</div> 
+	  	</div>
+	  	
+	  	<script src="index.js"></script>   
+	</body>
+</html>
